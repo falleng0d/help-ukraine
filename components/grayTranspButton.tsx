@@ -1,4 +1,4 @@
-import { PropsWithoutRef } from "react";
+import { InferPropsInner } from "prop-types";
 
 interface ClassOverrides {
   fontSize: "md" | "lg" | "xl";
@@ -9,7 +9,7 @@ function overrideClasses(classes: string, overrides: ClassOverrides): string {
 }
 
 interface GrayTranspButtonProps
-  extends PropsWithoutRef<JSX.IntrinsicElements["button"]> {
+  extends Partial<InferPropsInner<JSX.IntrinsicElements["button"]>> {
   overrides?: ClassOverrides;
 }
 
@@ -23,5 +23,9 @@ export function GrayTranspButton(props: GrayTranspButtonProps) {
   if (props.overrides) {
     classes = overrideClasses(classes, props.overrides);
   }
-  return <button className={classes}>{props.children}</button>;
+  return (
+    <button {...props} className={classes}>
+      {props.children}
+    </button>
+  );
 }
