@@ -1,4 +1,4 @@
-# Homepage for https://anime.matj.dev
+# Source code for https://help-ukraine.matj.dev
 
 ## Develop
 
