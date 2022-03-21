@@ -78,9 +78,9 @@ function FoldableDisclosures() {
               href="https://www.comebackalive.in.ua/donate"
               className="hover:underline hover:text-blue-500"
             >
-              <b> 🤍 COME BACK ALIVE </b> - "Since its birth in 2014, Come Back
-              Alive has become the largest foundation providing support to the
-              Ukrainian Armed Forces."
+              <b>🤍 COME BACK ALIVE</b> - &quot;Since its birth in 2014, Come
+              Back Alive has become the largest foundation providing support to
+              the Ukrainian Armed Forces.&quot;
             </a>
           </StyledDisclosure>
           <StyledDisclosure open={true} title="Support Ukrainian Developers">
@@ -131,8 +131,9 @@ function FoldableDisclosures() {
                 content through the week!.
               </p>
               <p className="mb-2">
-                If you're interested you can help me by sending me links and
-                content useful that can help in supporting the Ukrainian people.
+                If you&#39;re interested you can help me by sending me links
+                with useful content that can help in supporting the Ukrainian
+                people.
               </p>
               <p className="mb-2">
                 Contact-me on:{" "}
